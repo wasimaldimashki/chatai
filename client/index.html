@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semox - Your AI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body oncontextmenu="return true">
+    <div id="app">
+      <h1 class="auth">Create By semo ald</h1>
+      <div id="chat_container"></div>
+
+      <form>
+        <textarea name="prompt" rows="1" cols="1" placeholder="Ask semo..."></textarea>
+        <button type="submit"><img src="assets/send.svg" alt="send" />
+      </form>
+    </div>
+
+    <!-- Model Script -->
+    <script type="module" src="script.js"></script>
+
+    <!-- Secure Script -->
+    <script>
+      document.onkeydown = function(e) {
+          if (event.KeyCode == 123) {
+              window.alert("You Can't Access . .");
+              return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+              window.alert("You Can't Access . .");
+              return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+              window.alert("You Can't Access . .");
+              return false;
+          }
+          if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+              window.alert("Can't Display Source Code . .");
+              return false;
+          }
+      }
+  </script>
+  </body>
+</html>
